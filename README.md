@@ -1,82 +1,80 @@
-# Proyek Smart Contract ToDoList dengan Solidity
+# Solidity To-Do List: A Best-Practice Smart Contract
 
-Ini adalah proyek sederhana yang mengimplementasikan *smart contract* daftar tugas (To-Do List) di blockchain Ethereum. Kontrak ini ditulis dalam Solidity dan mengikuti praktik terbaik industri dalam hal keamanan, efisiensi gas, dan keterbacaan kode.
+This is a simple project that implements a To-Do List smart contract on the Ethereum blockchain. The contract is written in Solidity and adheres to industry best practices regarding security, gas efficiency, and code readability.
 
-## Fitur Utama
+## Key Features
 
-- **Membuat Tugas Baru**: Menambahkan tugas baru ke dalam daftar.
-- **Mengubah Status Tugas**: Menandai tugas sebagai selesai atau belum selesai (`toggleCompleted`).
-- **Memperbarui Konten**: Mengedit teks dari tugas yang sudah ada.
-- **Menghapus Tugas**: Menghapus tugas dari daftar secara efisien.
-- **Melihat Tugas**: Mengambil detail satu tugas atau semua tugas yang aktif.
-- **Kontrol Akses**: Hanya pemilik kontrak (`owner`) yang dapat memodifikasi daftar tugas.
+-   **Create Tasks**: Add new tasks to the list.
+-   **Toggle Status**: Mark tasks as completed or incomplete (`toggleCompleted`).
+-   **Update Content**: Edit the text of an existing task.
+-   **Delete Tasks**: Efficiently remove tasks from the list.
+-   **View Tasks**: Retrieve details for a single task or all active tasks.
+-   **Access Control**: Only the contract owner can modify the to-do list.
 
-## Teknologi yang Digunakan
+## Tech Stack
 
-- **Solidity**: `^0.8.20`
-- **Hardhat**: Lingkungan pengembangan dan pengujian Ethereum.
-- **Ethers.js**: Pustaka untuk berinteraksi dengan smart contract.
-- **Chai & Mocha**: Kerangka kerja untuk pengujian (testing).
+-   **Solidity**: `^0.8.20`
+-   **Hardhat**: Ethereum development and testing environment.
 
-## Prasyarat
+## Prerequisites
 
-Pastikan Anda telah menginstal perangkat lunak berikut di sistem Anda:
-- [Node.js](https://nodejs.org/) (versi 18.x atau lebih tinggi)
-- npm atau yarn
+Please ensure you have the following software installed on your system:
+-   [Node.js](https://nodejs.org/) (v18.x or higher)
+-   npm or yarn
 
-## Instalasi dan Setup
+## Installation and Setup
 
-1.  **Clone repository ini:**
+1.  **Clone this repository:**
     ```bash
-    git clone [URL_REPOSITORY_ANDA]
+    git clone [YOUR_REPOSITORY_URL]
     ```
 
-2.  **Masuk ke direktori proyek:**
+2.  **Navigate to the project directory:**
     ```bash
-    cd [NAMA_FOLDER_PROYEK]
+    cd [PROJECT_FOLDER_NAME]
     ```
 
-3.  **Install semua dependensi/pustaka yang dibutuhkan:**
+3.  **Install all required dependencies:**
     ```bash
     npm install
     ```
 
-## Perintah Dasar (Hardhat)
+## Basic Commands (Hardhat)
 
-Berikut adalah beberapa perintah yang sering digunakan dalam pengembangan proyek ini.
+Here are some common commands used for developing this project.
 
-- **Kompilasi Smart Contract:**
-  Perintah ini akan mengkompilasi file `.sol` Anda dan membuat file ABI di folder `artifacts`.
-  ```bash
-  npx hardhat compile
-  ```
+-   **Compile the Smart Contract:**
+    This command compiles your `.sol` files and generates ABI files in the `artifacts` directory.
+    ```bash
+    npx hardhat compile
+    ```
 
-- **Menjalankan Pengujian (Testing):**
-  Perintah ini akan menjalankan semua file tes yang ada di folder `test/`.
-  ```bash
-  npx hardhat test
-  ```
+-   **Run Tests:**
+    This command will execute all test files located in the `test/` directory.
+    ```bash
+    npx hardhat test
+    ```
 
-- **Deploy ke Jaringan Lokal:**
-  Untuk men-deploy kontrak ke jaringan lokal Hardhat, jalankan perintah berikut di terminal terpisah:
-  ```bash
-  npx hardhat node
-  ```
-  Kemudian, jalankan skrip deploy di terminal lain:
-  ```bash
-  npx hardhat run scripts/deploy.js --network localhost
-  ```
+-   **Deploy to a Local Network:**
+    To deploy the contract to a local Hardhat network, run the following command in a separate terminal:
+    ```bash
+    npx hardhat node
+    ```
+    Then, run the deployment script in another terminal:
+    ```bash
+    npx hardhat run scripts/deploy.js --network localhost
+    ```
 
-## Struktur Kontrak
+## Contract Structure
 
-- `contracts/ToDoList.sol`: File utama yang berisi logika smart contract ToDoList.
-- `test/ToDoList.test.js`: Berisi unit test untuk memastikan semua fungsi berjalan sesuai harapan.
-- `scripts/deploy.js`: Skrip sederhana untuk men-deploy kontrak ke jaringan.
-- `hardhat.config.js`: File konfigurasi untuk proyek Hardhat.
+-   `contracts/ToDoList.sol`: The main file containing the ToDoList smart contract logic.
+-   `test/ToDoList.test.js`: Contains unit tests to ensure all functions work as expected.
+-   `scripts/deploy.js`: A simple script to deploy the contract to a network.
+-   `hardhat.config.js`: The configuration file for the Hardhat project.
 
-## Lisensi
+## License
 
-Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file `LICENSE` untuk detailnya.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
-**Penulis:** [NAMA ANDA]
+**Author:** rasyrichie
