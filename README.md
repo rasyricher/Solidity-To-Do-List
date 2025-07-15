@@ -1,4 +1,4 @@
-# Solidity To-Do List: A Best-Practice Smart Contract
+# Solidity To-Do List
 
 This is a simple project that implements a To-Do List smart contract on the Ethereum blockchain. The contract is written in Solidity and adheres to industry best practices regarding security, gas efficiency, and code readability.
 
